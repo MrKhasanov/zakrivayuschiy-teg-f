@@ -266,20 +266,6 @@
 
 .card__icon-button {
   display: flex;
-}
-
-.card__icon-button {
-  margin-right: 5px;
-  width: 41px;
-  height: 38px;
-  flex-shrink: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: 2px solid transparent;
-  padding: 0;
-}
-
-.card__icon-button-footer {
   margin-right: 5px;
   width: 41px;
   height: 38px;
