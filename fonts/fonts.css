@@ -20,7 +20,7 @@
     font-family: 'Inter';
     src: local('Inter-Bold'),
          url(./Inter-Variable.woff2) format('woff2');
-         font-weight: 700;
+         font-weight: 785;
          font-display: swap;
 
 }

@@ -17,9 +17,11 @@
     0% {
         right: 0;   
     }
+
     50% {
-        right: 4px
+        right: 4px;
     }
+
     100% {
         right: 0;
     }
@@ -29,6 +31,7 @@
     0% {
         scale: 1;
     }
+
     100% {
         scale: 1.5;
     }
