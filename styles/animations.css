@@ -58,4 +58,13 @@
     }
 }
 
+@keyframes core {
+    0% {
+        color: 0;
+    }
+
+    100% {
+        color: var(--like-icon);
+    }
+}
 
