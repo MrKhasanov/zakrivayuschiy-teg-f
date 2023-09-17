@@ -24,7 +24,6 @@
   min-inline-size: 320px;
   max-inline-size: 696px;
   min-block-size: 100dvb;
-  /*font-family: var(--regular-font, sans-serif);*/
   color: var(--regular-color);
   background-image: var(--bg-color);
   background-size: cover;
@@ -89,8 +88,6 @@
 }
 
 .theme-menu__button:hover {
-  /*color: var(--regular-color-menu);
-  transition: color 0.3s;*/
   opacity: 0.6;
 }
 
@@ -220,7 +217,7 @@
 }
 
 .about__text {
-  padding: 25px;
+  padding: 25.2px 23.2px 12px;
   font-family: var(--regular-font, sans-serif);
   font-size: 18px;
   font-style: normal;
@@ -229,27 +226,9 @@
   border-top: 2px solid var(--regular-color);
 }
 
-.text__mi {
-  padding: 0.2em 0.5em 1.35em 1.4em;
-  font-family: var(--regular-font, sans-serif);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: var(--font-weight-text);
-  line-height: 21px; /* 116.667% */
+.about .about__text-mi:last-child {
+  padding: 1.55em 0em 0.71em;
 }
-
-
-
-/*.text__mi-bottom {
-  padding-bottom: 2em;
-  padding: 0.2em 0.5em 1.35em 1.2em;
-  /*font-family: var(--regular-font-normal, sans-serif);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px; /* 116.667% 
-  background-image: url(../svg/floppy2.svg);*/
-
 
 .card {
   display: flex;
@@ -294,11 +273,10 @@
   display: flex;
   background-color: transparent;
   border: 2px solid var(--regular-color);
-  /*padding: 9px 17px;*/
   width: 130px;
   min-height: 38px;
   position: relative;
-  margin-inline-end: 1.6em;
+  margin-inline-end: 1.5em;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -331,13 +309,13 @@
 
 .card__button {
   display: flex;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, sans-serif);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 90%; /* 12.6px */
   flex-direction: row;
-  padding: 14px 16px;
+  padding: 14px 18px;
   justify-items: center;
   align-items: center;
   background: var(--background);
@@ -358,11 +336,13 @@
 }
 
 .card__icon {
-  display: flex;
+  display: grid;
   width: 21px;
   justify-self: center;
   align-items: center;
-  color :var(--like-icon);
+  color: var(--button-like);
+  isolation: isolate;
+  text-decoration: none;
   mix-blend-mode: difference;
 }
 
@@ -373,7 +353,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 90%; /* 12.6px */
- 
   isolation: isolate;
   text-decoration: none;
   mix-blend-mode: difference;
@@ -513,7 +492,6 @@
   color: var(--regular-color);
   cursor: pointer;
   border: 2px solid var(--regular-color);
-  
 }
 
 .form::before {
@@ -536,7 +514,6 @@
   transform: scaleX(1);
 }
 
-
 .button {
   position: relative;
   border: 0;
@@ -549,19 +526,16 @@
   color: var(--button-like);
   background-color: transparent;
   cursor: pointer;
-  
-  
 }
 
 .icon {
   position: absolute;
-  
   display: flex;
   margin-block-start: 1em;
-  margin-inline-start: 1em;
+  margin-inline-start: 1.8em;
   justify-self: center;
   align-items: center;
-  background-color: var(--like-icon);
+  color: var(--regular-color);
   width: 39px;
   height: 39px;
 }
@@ -593,20 +567,18 @@
   }
 
   .about__text {
-    padding-right: 30.85px;
+    padding: 25px 28px 25px 26px;
     padding-bottom: 0;
+  }
+
+  .about__text .about__text-mi:last-child {
+    padding: 1.44em 0em 1.49em 0em;
   }
 
   .image__label {
     top: 1.5em;
     right: 0.8em;
     font-size: 14px;
-  }
-  
-
-  .text__mi {
-    padding: 1.44em 1em 1.5em 1.4em;
-   
   }
 
   .footer {
@@ -615,13 +587,12 @@
     flex-direction: row;
   }
 
-
   .card__button {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 12px 20px;
+    padding: 14px 20px;
     margin: 0;
   }
 
@@ -630,9 +601,3 @@
     align-self: center;
   }
 }
-var contentTypesByExtension = {
-  '.html': "text/html",
-  '.css':  "text/css",
-  '.js':   "text/javascript",
-  '.svg': "**image/svg+xml**"
-};
