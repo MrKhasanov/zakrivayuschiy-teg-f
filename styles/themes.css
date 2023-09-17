@@ -7,10 +7,10 @@
 
 :root.theme-light {
     --regular-color: #000;
-    --regular-font-bold: 'Inter';
-    --regular-font-normal: 'Inter';
     --button-like: #fff;
     --regular-font: 'Inter-Variable';
+    --font-weight-title: 700;
+    --font-weight-text: 400;
     --accent-font: 'PressStart2P';
     --background: #fff;
     --like-icon: #ff0000;
@@ -37,9 +37,10 @@
     --regular-color: #00cc14;
     --regular-color-menu: rgba(0 204 20 / 0.6);
     --button-like: #00cc14;
-    --regular-font-bold: 'Inter';
-    --regular-font-normal: 'Inter';
     --regular-font: 'Inter-Variable';
+    --accent-font: 'PressStart2P';
+    --font-weight-title: 785;
+    --font-weight-text: 465;
     --like-icon: #ff0000;
     --background: #000;
 
@@ -65,9 +66,10 @@
     --regular-color: #00cc14;
     --regular-color-menu: rgba(0 204 20 / 0.6);
     --button-like: #00cc14;
-    --regular-font-bold: 'Inter';
-    --regular-font-normal: 'Inter';
+    --accent-font: 'PressStart2P';
     --regular-font: 'Inter-Variable';
+    --font-weight-title: 785;
+    --font-weight-text: 465;
     --like-icon: #ff0000;
     --background: #000;
 
@@ -92,11 +94,11 @@
 @media (prefers-color-scheme: light) {
   :root {
     --regular-color: #000;
-    --regular-font-bold: 'Inter';
-    --regular-font-normal: 'Inter';
     --button-like: #fff;
     --regular-font: 'Inter-Variable';
     --accent-font: 'PressStart2P';
+    --font-weight-title: 700;
+    --font-weight-text: 400;
     --background: #fff;
     --like-icon: #ff0000;
     --regular-color-menu: rgba(0 0 0 / 0.6);
